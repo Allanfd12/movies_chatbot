@@ -40,6 +40,12 @@ client.on('disconnected', () => {
 
 client.on('ready', () => {
   console.log('Client is ready!');
+
+  client.isRegisteredUser("557399532438@c.us").then(function(isRegistered) {
+    if(isRegistered) {
+       //     client.sendMessage("557399532438@c.us", "hello, o chatbot iniciou meu parceiro..., iniciou, mas não vai ter encomoder +")
+    }
+})
 });
 
 export default client;

@@ -16,7 +16,8 @@ export const intentMap = new Map<
 >([
   ['Default Welcome Intent', (agent, phone) => intentService.welcome(agent, phone)],
   ['Default Fallback Intent', (agent, phone) => intentService.fallback(agent, phone)],
-  ['Search Movie', (agent, phone) => intentService.searchMovie(agent, phone)],
-  ['Movies in Theaters', (agent, phone) => intentService.moviesInTheaters(agent, phone)],
-  ['Popular Movies', (agent, phone) => intentService.popularMovies(agent, phone)],
+  ['Buscar filme', (agent, phone) => intentService.searchMovie(agent, phone)],
+  ['Filmes em cartaz', (agent, phone) => intentService.moviesInTheaters(agent, phone)],
+  ['Buscar filmes populares', (agent, phone) => intentService.popularMovies(agent, phone)],
 ]);
+

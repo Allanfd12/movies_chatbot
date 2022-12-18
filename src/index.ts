@@ -12,9 +12,12 @@ const validationMessage = async (msg: WAWebJS.Message): Promise<boolean> => {
 
   if (chat.isGroup) return false;
 
+  console.log(msg.from);
+
   const [phoneNumber] = msg.from.split('@');
 
-  if (phoneNumber !== '557391628444') return false;
+  if (phoneNumber == '557381648793' || phoneNumber == '5573981648793') return false;
+ // console.log("NUMERO ",phoneNumber);
 
   return true;
 };
